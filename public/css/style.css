@@ -1,0 +1,342 @@
+*{
+    font-family:oswold, Arial, Helvetica, sans-serif;
+}
+body{
+    padding-top: 14vh;
+}
+
+/* Header styling */
+header{
+    height: 15vh;
+    width: 100%;
+    position:fixed;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:left;
+    background-color: black;
+    border-bottom-left-radius: 10% ;
+    left: 0;
+}
+ #logo{
+    height: 90%;
+    width:fit-content;
+    margin-left: 2%;
+    margin-right: 2%
+}
+#logo > img{
+        height: 100%;
+    }
+    #title{
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+#externalLinks{
+    margin-left: auto;
+    margin-right: 5%;
+}
+/* main content */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+p{  
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+button{
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: none;
+    border-radius: 0% 20%;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover {
+    color: white;
+    background: black
+}
+.linkButton{
+    border: none;
+     padding: 1rem 2rem;
+    /* margin: 15%; */
+    text-decoration: none;
+    background: none;
+    border-radius: 0% 20%;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: white;
+
+}
+.linkButton:hover {
+    color: black;
+    background: orangered
+}
+#mobileButton{
+    display: none;
+}
+#PageNavWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+.pageNav{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+ .card{
+     width: 60%;
+     margin: auto;
+     margin-bottom: 10%;
+     padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid black;
+    box-shadow: 2px 4px orangered;
+    border-radius: 100px 0px;
+}
+#portrait{
+    width: 40%;
+}
+footer{
+    background-color: white;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    bottom: 0;
+    border-top: 2px solid black;
+    border-radius: 30% 0%;
+}
+#signiture{
+    font-size: 10px;
+    font-style: italic;
+}
+/* hides or shows content */
+
+.invisible{
+    display: none;
+}
+#aboutMeCard > h2{
+    color: steelblue;
+}
+/* Portfolio section styling! */
+#portfolioCard{
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#portfolioCard > h2{
+    color: orangered;
+}
+#resumeCard{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#resumeCard > h2{
+    color: seagreen;
+    flex-basis: 100%;
+    width: fit-content;
+}
+h4{
+margin: 1%;
+}
+h5{
+    margin: 1%;
+}
+.resumeSection{
+    border: 2px solid black;
+    width: 80%;
+    margin: 10%;
+    border-radius: 0px 30px;
+    padding:2%
+}
+.portfolioEl{
+    max-width: 80%;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.portfolioEl > a > img{
+    width: 100%;
+}
+.label{
+    z-index: -1;
+    height: fit-content;
+    margin-top: 1%;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 1px 2px orangered;
+    border-radius: 30% 0%;
+}
+.labelText{
+    font-size: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 880px){
+    .mobileInvisible{
+        display: none;
+    }
+    .mobileVisible{
+        display:flex;
+    }
+    .card{
+        width: 90%
+    }
+    #externalLinks{
+        flex-basis: 100%;
+        margin-left: 70%;
+        width: 20% ;
+        height: 200px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background: black;
+    }
+
+    #mobileButton{
+        font-size: 40px;
+        display: inherit;
+        color: white;
+        margin-left: auto;
+        margin-right: 5%;
+    }
+    #mobileButton:hover {
+        color: black;
+        background: orangered
+    }
+   
+    h1{
+        margin: 0;
+        font-size: 4vw;
+        width: fit-content;
+   } 
+   .card{
+    width: 100%
+}
+
+@media screen and (max-width: 300px){
+#title{
+    display: none;
+}
+header {
+    justify-content: center;
+}
+#logo{
+    margin-left: auto;
+}
+}
+/* scrollbar styling */
+/* scrollbar  */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffdddd;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 176, 176);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: orangered;
+  }
+}
+
+/* Contact Card CSS */
+
+.contactCard {
+    margin: auto;
+    margin-top: 20vh;
+    border-radius: 30px 0px;
+    width: 60vw;
+    height: 35vw;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .contactCardInner {
+    position: relative;
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px 0px;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do a horizontal flip when you move the mouse over the flip box container */
+  .contactCard:hover .contactCardInner {
+    transform: rotateY(540deg);
+  }
+  
+  /* Position the front and back side */
+  #front, #back {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+#front {
+      border-radius: 30px 0px;
+      background-color: cornsilk;
+  }
+  #front > img{
+      width: 15vw;
+      border-radius: 30px 30px 0px;
+      margin: 4px 4px 4px 4px;
+  }
+  #front > h1 {
+    text-align: center;
+  }
+  
+  /* Style the back side */
+  #back {
+    text-align: center;
+    border-radius: 0px 30px;
+    background-color: cornsilk;
+    transform: rotateY(540deg);
+  }
+  #back > a{
+      color: black;
+      font-style: normal;
+      text-decoration-line: none;
+      margin: 2%;
+  }
+  #back > h1{
+      margin: 5%;
+  }
